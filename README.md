@@ -6,6 +6,11 @@ Development midterm examination project.
 ## Exam instructions
 
 The official examination requirements and expected output are available in
+
+> **Hosted application:**
+<https://sai-aike-sta.github.io/midterm-task-management-app/>
+
+
 [WAD 2026-1 Midterms Exam Instructions](<resources/WAD 2026-1 Midterms Exam Instructions.docx>).
 
 Static deployment repository:
@@ -13,8 +18,7 @@ Static deployment repository:
 
 GitHub Pages base path: `/midterm-task-management-app/`
 
-Hosted application:
-<https://sai-aike-sta.github.io/midterm-task-management-app/>
+
 
 ## Application features
 
