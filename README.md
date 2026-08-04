@@ -3,10 +3,6 @@
 This is the source-code repository for the CSX4107 Web Application
 Development midterm examination project.
 
-Local source directory: `csx4107-midterm-task-manager-app`
-
-Source code repository:
-<https://github.com/Sai-Aike-STA/midterm-task-management-app-source>
 
 Static deployment repository:
 <https://github.com/Sai-Aike-STA/midterm-task-management-app>
@@ -40,7 +36,7 @@ npm run dev
 npm run build
 ```
 
-## Refresh the deployment repository
+## Refreshing the deployment repository
 
 ```bash
 ./deploy.sh
@@ -87,3 +83,11 @@ git add -A
 git commit -m "refresh hosted build"
 git push
 ```
+
+
+---
+## Local Source Stuff
+Local source directory: `csx4107-midterm-task-manager-app`
+
+Source code repository:
+<https://github.com/Sai-Aike-STA/midterm-task-management-app-source>
