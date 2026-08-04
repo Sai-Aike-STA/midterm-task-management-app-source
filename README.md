@@ -5,7 +5,16 @@ Development midterm examination project.
 
 Local source directory: `csx4107-midterm-task-manager-app`
 
+Source code repository:
+<https://github.com/Sai-Aike-STA/midterm-task-management-app-source>
+
+Static deployment repository:
+<https://github.com/Sai-Aike-STA/midterm-task-management-app>
+
 GitHub Pages base path: `/midterm-task-management-app/`
+
+Hosted application:
+<https://sai-aike-sta.github.io/midterm-task-management-app/>
 
 ## Application features
 
@@ -31,5 +40,6 @@ npm run dev
 npm run build
 ```
 
-The built files in `dist` are copied into the separate
-`midterm-task-management-app` deployment repository for GitHub Pages.
+The built files in `dist` are copied into the local
+`csx4107-midterm-task-manager-app-dist` repository. That local repository is
+pushed to the `midterm-task-management-app` GitHub repository for GitHub Pages.
