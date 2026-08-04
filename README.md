@@ -3,6 +3,10 @@
 This is the source-code repository for the CSX4107 Web Application
 Development midterm examination project.
 
+## Exam instructions
+
+The official examination requirements and expected output are available in
+[WAD 2026-1 Midterms Exam Instructions](<resources/WAD 2026-1 Midterms Exam Instructions.docx>).
 
 Static deployment repository:
 <https://github.com/Sai-Aike-STA/midterm-task-management-app>
