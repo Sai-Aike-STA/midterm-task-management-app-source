@@ -57,3 +57,33 @@ The script performs these steps:
 The local deployment repository is `csx4107-midterm-task-manager-app-dist`.
 It is pushed to the `midterm-task-management-app` GitHub repository for
 GitHub Pages.
+
+### Repeat-run behavior
+
+The script is idempotent when its inputs are unchanged. Running it multiple
+times with the same source code, dependencies, and build configuration leaves
+the deployment repository with the same tracked contents.
+
+Changes to the source code, dependencies, `README-DIST.md`, or build
+configuration are inputs. When any of them changes, a later run is expected to
+produce a different deployment state.
+
+The script protects the deployment repository in three ways:
+
+- It checks the exact deployment directory name.
+- It requires the deployment directory to contain `.git`.
+- It checks that `README-DIST.md` exists before clearing old files.
+
+The clearing command removes every direct child except `.git`. Therefore, Git
+history and the configured remote are preserved. The deployment README is then
+recreated from the source-controlled `README-DIST.md` template.
+
+The script deliberately does not commit or push. After reviewing its output,
+the deployment can be published with:
+
+```bash
+cd ../csx4107-midterm-task-manager-app-dist
+git add -A
+git commit -m "refresh hosted build"
+git push
+```
