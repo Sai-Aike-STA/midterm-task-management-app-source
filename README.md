@@ -40,6 +40,20 @@ npm run dev
 npm run build
 ```
 
-The built files in `dist` are copied into the local
-`csx4107-midterm-task-manager-app-dist` repository. That local repository is
-pushed to the `midterm-task-management-app` GitHub repository for GitHub Pages.
+## Refresh the deployment repository
+
+```bash
+./deploy.sh
+```
+
+The script performs these steps:
+
+1. Builds the source project.
+2. Clears the old deployment files while preserving its `.git` directory.
+3. Copies the new `dist` contents into the deployment repository.
+4. Copies `README-DIST.md` as the deployment repository's `README.md`.
+5. Displays the deployment repository's Git status for review.
+
+The local deployment repository is `csx4107-midterm-task-manager-app-dist`.
+It is pushed to the `midterm-task-management-app` GitHub repository for
+GitHub Pages.
