@@ -45,10 +45,10 @@ cd "${SOURCE_DIR}"
 # Vite creates a new production build inside the source dist directory.
 npm run build
 
-# Vite may leave this macOS file in dist because it is hidden.
+# need to delete this cuz Vite may leave this macOS file in dist because it is hidden.
 rm -f "${SOURCE_DIR}/dist/.DS_Store"
 
-printf 'Clearing the old deployment files while preserving .git...\n'
+printf 'Clearing the old deployment files while preserving .git ...\n'
 
 # find looks only at the direct children of the deployment repository.
 # mindepth prevents the deployment directory itself from being selected.
