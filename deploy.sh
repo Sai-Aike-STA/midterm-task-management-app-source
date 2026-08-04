@@ -20,6 +20,9 @@ printf 'Building the source project...\n'
 cd "${SOURCE_DIR}"
 npm run build
 
+# Vite may leave this macOS file in dist because it is hidden.
+rm -f "${SOURCE_DIR}/dist/.DS_Store"
+
 printf 'Clearing the old deployment files while preserving .git...\n'
 find "${DEPLOY_DIR}" \
   -mindepth 1 \
